@@ -24,13 +24,15 @@ repositories {
     maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
 }
 
-mainClassName = "GMain"
+mainClassName = "com.time2die.autotask.JMain"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile "io.takari.slack:simple-slack-api:0.5.1"
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile 'org.projectlombok:lombok:1.16.8'
     runtime "org.slf4j:slf4j-simple:1.7.12"
     compile "com.heroku.sdk:heroku-jdbc:0.1.1"
     compile "org.postgresql:postgresql:9.4-1201-jdbc4"

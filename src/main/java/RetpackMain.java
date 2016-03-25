@@ -10,7 +10,7 @@ import java.util.*;
 import java.sql.*;
 import com.heroku.sdk.jdbc.DatabaseUrl;
 
-public class Main {
+public class RetpackMain {
   public static void main(String... args) throws Exception {
     RatpackServer.start(b -> b
         .serverConfig(s -> s
